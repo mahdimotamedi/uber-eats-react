@@ -90,3 +90,97 @@
     }
   }
 }
+
+// header
+.header {
+  background-color: $header-background-color;
+  height: $header-height;
+
+  &__backgrounds {
+    position: relative;
+
+    &--left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--right {
+      position: absolute;
+      top: -24px;
+      right: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: $header-height;
+
+    &--text {
+      margin-bottom: 40px;
+    }
+
+    &--delivery-box {
+      text-align: center;
+      display: inline-block;
+      width: 662px;
+
+      .input-group {
+        justify-content: center;
+        align-content: center;
+        height: 48px;
+        border-radius: 0;
+
+        &.active {
+          .form-control,
+          .input-group-prepend > span {
+            box-shadow: rgb(31, 31, 31) 0 -2px 0 inset;
+          }
+        }
+      }
+
+      .input-group-prepend {
+        height: 48px;
+
+        > span {
+          padding-top: 6px;
+          background: #fff;
+          border: 0;
+          border-radius: 0;
+          transition: box-shadow 0.3s ease-in-out;
+        }
+      }
+
+      .form-control {
+        border: 0;
+        padding-left: 2px;
+        height: 48px;
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .input-group-append {
+        margin-left: 15px;
+
+        > button {
+          border-radius: 0;
+          background: #3e9920;
+          font-size: 16px;
+          height: 48px;
+
+          &:hover {
+            background: #609c4f;
+          }
+        }
+      }
+    }
+  }
+}
