@@ -1,0 +1,92 @@
+@import "vars";
+
+// nav
+.nav {
+  line-height: $nav-height;
+  position: sticky;
+  background-color: #fff;
+  z-index: 10;
+  top: 0;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &-sticky {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+
+    .nav__deliver-box {
+      &--container {
+        animation: slideInRight-540 linear 0.5s;
+        width: 540px;
+        opacity: 1;
+      }
+    }
+  }
+
+  &-no-sticky {
+    .nav__deliver-box {
+      &--container {
+        animation: slideOutRight-540 linear 0.5s;
+      }
+    }
+  }
+
+  &__logo-part {
+    display: inline-block;
+  }
+
+  &__deliver-box {
+    display: inline-block;
+    width: 540px;
+    position: relative;
+
+    &--container {
+      position: absolute;
+      width: 0;
+      opacity: 0;
+      top: -27px;
+    }
+
+    .input-group {
+      justify-content: center;
+      align-content: center;
+      height: 48px;
+      background-color: #f5f5f5;
+      margin-left: 40px;
+      position: absolute;
+    }
+
+    .input-group-prepend {
+      height: 48px;
+
+      > span {
+        padding-top: 6px;
+        background-color: #f5f5f5;
+        border: 0;
+        border-radius: 0;
+      }
+    }
+
+    .form-control {
+      border: 0;
+      padding-left: 2px;
+      height: 48px;
+      background-color: #f5f5f5;
+      font-size: 16px;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__sign-in-part {
+    float: right;
+
+    > a {
+      color: #1f1f1f;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
