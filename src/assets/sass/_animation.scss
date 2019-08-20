@@ -1,0 +1,23 @@
+@keyframes slideInRight-540 {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 540px;
+  }
+}
+
+@keyframes slideOutRight-540 {
+  0% {
+    opacity: 1;
+    width: 540px;
+  }
+
+  100% {
+    opacity: 1;
+    width: 0;
+  }
+}
