@@ -14,7 +14,7 @@
 
     .nav__deliver-box {
       &--container {
-        animation: slideInRight-540 linear 0.5s;
+        animation: slideInRight-540 ease-in-out 0.65s;
         width: 540px;
         opacity: 1;
       }
@@ -24,7 +24,7 @@
   &-no-sticky {
     .nav__deliver-box {
       &--container {
-        animation: slideOutRight-540 linear 0.5s;
+        animation: slideOutRight-540 ease-in-out 0.65s;
       }
     }
   }
