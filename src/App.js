@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./ui/components/nav/Nav";
 import Header from "./ui/components/header/Header";
-import Home from "./ui/views/Home";
+import AppContent from "./ui/views/AppContent";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Nav />
       <Header />
 
-      <Home />
+      <AppContent />
     </>
   );
 }
