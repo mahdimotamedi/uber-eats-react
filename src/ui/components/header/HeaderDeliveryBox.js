@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
 import mapIcon from "../../../assets/images/map.svg";
 
-function CpHeaderDeliveryBox() {
+function HeaderDeliveryBox() {
   const [inputFocus, setInputFocus] = useState(false);
 
   const inputRef = useRef(null);
@@ -29,4 +29,4 @@ function CpHeaderDeliveryBox() {
   );
 }
 
-export default CpHeaderDeliveryBox;
+export default HeaderDeliveryBox;

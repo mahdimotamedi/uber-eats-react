@@ -1,13 +1,13 @@
 import React from "react";
-import CpNav from "./ui/components/nav/cp.nav";
-import CpHeader from "./ui/components/header/cp.header";
+import Nav from "./ui/components/nav/Nav";
+import Header from "./ui/components/header/Header";
 import Home from "./ui/views/Home";
 
 function App() {
   return (
     <>
-      <CpNav />
-      <CpHeader />
+      <Nav />
+      <Header />
 
       <Home />
     </>

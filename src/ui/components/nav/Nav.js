@@ -3,7 +3,7 @@ import { Container, FormControl, InputGroup } from "react-bootstrap";
 import logoDark from "../../../assets/images/logo.svg";
 import mapIcon from "../../../assets/images/map.svg";
 
-function CpNav() {
+function Nav() {
   const [onTop, setOnTop] = useState(true);
   const [haveScrolled, setHaveScrolled] = useState(false);
 
@@ -52,4 +52,4 @@ function CpNav() {
   );
 }
 
-export default CpNav;
+export default Nav;

@@ -1,9 +1,9 @@
 import React from "react";
 import headerBackLeft from "../../../assets/images/header-back-left.svg";
 import headerBackRight from "../../../assets/images/header-back-right.svg";
-import CpHeaderDeliveryBox from "./cp.header.delivery-box";
+import HeaderDeliveryBox from "./HeaderDeliveryBox";
 
-function CpHeader() {
+function Header() {
   return (
     <header className="header">
       <div className="header__backgrounds">
@@ -24,10 +24,10 @@ function CpHeader() {
           <h2>Restaurants you love, delivered to you</h2>
         </div>
 
-        <CpHeaderDeliveryBox />
+        <HeaderDeliveryBox />
       </div>
     </header>
   );
 }
 
-export default CpHeader;
+export default Header;
