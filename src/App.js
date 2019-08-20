@@ -1,9 +1,16 @@
-import React from 'react';
-import LayoutApp from "./ui/layouts/layout.app";
+import React from "react";
+import CpNav from "./ui/components/nav/cp.nav";
+import CpHeader from "./ui/components/header/cp.header";
+import Home from "./ui/views/Home";
 
 function App() {
   return (
-    <LayoutApp />
+    <>
+      <CpNav />
+      <CpHeader />
+
+      <Home />
+    </>
   );
 }
 
