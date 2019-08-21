@@ -402,3 +402,65 @@
     }
   }
 }
+
+// footer
+.footer {
+  background-color: #1f1f1f;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #fff;
+
+  hr {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__logo {
+    margin-bottom: 120px;
+  }
+
+  &__get-app {
+    > img {
+      width: 135px;
+      margin-right: 16px;
+    }
+  }
+
+  &__links {
+    a {
+      color: #fff !important;
+      display: block;
+      margin-bottom: 14px;
+      line-height: 24px;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:first-of-type {
+        font-weight: 500;
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  &__copyright {
+    a {
+      display: inline-block;
+      color: #fff;
+      margin-right: 27px;
+      margin-bottom: 40px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      width: 16px;
+      margin-right: 20px;
+    }
+  }
+}
