@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Button, FormControl, InputGroup } from "react-bootstrap";
-import mapIcon from "../../../assets/images/map.svg";
+import mapIcon from "../../../assets/images/icons/map.svg";
 
 function HeaderDeliveryBox() {
   const [inputFocus, setInputFocus] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, FormControl, InputGroup } from "react-bootstrap";
 import logoDark from "../../../assets/images/logo.svg";
-import mapIcon from "../../../assets/images/map.svg";
+import mapIcon from "../../../assets/images/icons/map.svg";
 
 function Nav() {
   const [onTop, setOnTop] = useState(true);

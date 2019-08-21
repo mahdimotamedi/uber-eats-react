@@ -3,7 +3,8 @@ import CarouselFood from "../components/carousel-food/CarouselFood";
 import { Container } from "react-bootstrap";
 import ApiFood from "../../core/api/api.food";
 import HomeIntro from "../components/home-intro/HomeIntro";
-import HomeCities from "../components/home-cities/home-cities";
+import HomeCities from "../components/home-cities/HomeCities";
+import HomeCats from "../components/home-cats/HomeCats";
 
 function AppContent() {
   const [foods1, setFoods1] = useState([]);
@@ -32,6 +33,8 @@ function AppContent() {
         <HomeCities />
 
         <hr />
+
+        <HomeCats />
       </Container>
     </>
   );

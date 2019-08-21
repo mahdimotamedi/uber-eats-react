@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import { Badge, Button, Col, Figure, Row } from "react-bootstrap";
-import starIcon from "../../../assets/images/star.svg";
-import arrowLeft from "../../../assets/images/arrow-left.svg";
-import arrowLeftDisabled from "../../../assets/images/arrow-left-disabled.svg";
-import arrowRight from "../../../assets/images/arrow-right.svg";
-import arrowRightDisabled from "../../../assets/images/arrow-right-disabled.svg";
+import starIcon from "../../../assets/images/icons/star.svg";
+import arrowLeft from "../../../assets/images/icons/arrow-left.svg";
+import arrowLeftDisabled from "../../../assets/images/icons/arrow-left-disabled.svg";
+import arrowRight from "../../../assets/images/icons/arrow-right.svg";
+import arrowRightDisabled from "../../../assets/images/icons/arrow-right-disabled.svg";
 
 function CarouselFood({ title, items }) {
   const [translateX, setTranslateX] = useState(0);

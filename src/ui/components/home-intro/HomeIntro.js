@@ -3,8 +3,8 @@ import { Col, Figure, Row } from "react-bootstrap";
 import homeLand1 from "../../../assets/images/home-land-1.svg";
 import homeLand2 from "../../../assets/images/home-land-2.svg";
 import homeLand3 from "../../../assets/images/home-land-3.svg";
-import apple from "../../../assets/images/apple.svg";
-import playStore from "../../../assets/images/play-store.svg";
+import apple from "../../../assets/images/icons/apple.svg";
+import playStore from "../../../assets/images/icons/play-store.svg";
 
 function HomeIntro() {
   return (
