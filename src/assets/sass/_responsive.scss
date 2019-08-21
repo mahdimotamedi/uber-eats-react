@@ -4,9 +4,95 @@
   }
 }
 
-
 @media (min-width: 1330px) {
   .container {
     max-width: 1310px;
+  }
+}
+
+@media (max-width: 985px) {
+  .nav__deliver-box {
+    width: 300px;
+
+    .input-group {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .nav__deliver-box {
+    width: 200px;
+
+    .input-group {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .nav__deliver-box {
+    display: none;
+  }
+
+  .header {
+    height: 300px;
+
+    &__content {
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 300px;
+
+      &--delivery-box {
+        width: 100%;
+
+        > .input-group {
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        .form-control {
+          width: 87%;
+        }
+
+        .input-group-prepend {
+          width: 13%;
+
+          .input-group-text {
+            width: 100%;
+          }
+        }
+
+        .input-group-append {
+          width: 100%;
+          margin-left: 0;
+
+          button {
+            margin-top: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .cities__btn-more {
+    display: none;
+  }
+
+  .carousel-food {
+    h3 {
+      width: 60%;
+    }
+  }
+
+  .footer {
+    &__logo {
+      margin-bottom: 60px;
+    }
+
+    &__get-app {
+      margin-bottom: 30px;
+    }
   }
 }

@@ -6,6 +6,8 @@ import arrowLeftDisabled from "../../../assets/images/icons/arrow-left-disabled.
 import arrowRight from "../../../assets/images/icons/arrow-right.svg";
 import arrowRightDisabled from "../../../assets/images/icons/arrow-right-disabled.svg";
 
+let stepSize = window.screen.width < 756 ? 1 : 3;
+
 function CarouselFood({ title, items }) {
   const [translateX, setTranslateX] = useState(0);
   const [page, setPage] = useState(0);
@@ -36,7 +38,7 @@ function CarouselFood({ title, items }) {
     if (page === 0) setIsFirstPage(true);
     else setIsFirstPage(false);
 
-    if (page + 1 >= items.length / 3) setIsLastPage(true);
+    if (page + 1 >= items.length / stepSize) setIsLastPage(true);
     else setIsLastPage(false);
   };
 
@@ -65,7 +67,12 @@ function CarouselFood({ title, items }) {
           style={{ transform: `translate(${translateX}px, 0px)` }}
         >
           {items.map(item => (
-            <Col md={4} className="carousel-food__row--item" key={item.id}>
+            <Col
+              md={4}
+              xs={12}
+              className="carousel-food__row--item"
+              key={item.id}
+            >
               <Figure>
                 <Figure.Image src={item.image} />
                 <Figure.Caption>
