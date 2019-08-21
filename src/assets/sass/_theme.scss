@@ -348,3 +348,57 @@
     }
   }
 }
+
+// home cats
+.home-cats {
+  padding-bottom: 50px;
+
+  h3 {
+    margin-bottom: 0;
+    display: inline-block;
+  }
+
+  &__item {
+    margin-top: 25px;
+
+    &--img {
+      border-radius: 50%;
+      height: 0;
+      padding-top: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.breakfast {
+        background-image: url("./../images/cats/breakfast.jpg");
+      }
+
+      &.desserts {
+        background-image: url("./../images/cats/dessert.jpg");
+      }
+
+      &.fastFood {
+        background-image: url("./../images/cats/fast-food.jpg");
+      }
+
+      &.healthy {
+        background-image: url("./../images/cats/healthy.jpg");
+      }
+
+      &.pizza {
+        background-image: url("./../images/cats/pizza.jpg");
+      }
+
+      &.wings {
+        background-image: url("./../images/cats/wings.jpg");
+      }
+    }
+
+    &--title {
+      text-align: center;
+      line-height: 24px;
+      font-size: 16px;
+      color: #1f1f1f;
+      margin-top: 5px;
+    }
+  }
+}
