@@ -6,18 +6,16 @@ import HeaderDeliveryBox from "./HeaderDeliveryBox";
 function Header() {
   return (
     <header className="header">
-      <div className="header__backgrounds">
-        <img
-          className="header__backgrounds--left"
-          src={headerBackLeft}
-          alt="header-background"
-        />
-        <img
-          className="header__backgrounds--right"
-          src={headerBackRight}
-          alt="header-background"
-        />
-      </div>
+      <img
+        className="header__backgrounds--left"
+        src={headerBackLeft}
+        alt="header-background"
+      />
+      <img
+        className="header__backgrounds--right"
+        src={headerBackRight}
+        alt="header-background"
+      />
 
       <div className="header__content">
         <div className="header__content--text">
