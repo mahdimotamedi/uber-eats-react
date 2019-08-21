@@ -10,6 +10,13 @@ a {
   }
 }
 
+.btn {
+  &:focus,
+  :active {
+    box-shadow: none;
+  }
+}
+
 h2 {
   color: #1f1f1f;
   font-size: 36px;
