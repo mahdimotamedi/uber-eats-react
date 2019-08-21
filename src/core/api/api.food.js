@@ -1,7 +1,14 @@
-import foods from "./_foods.json";
+import _foods from "./_foods.json";
 
 const ApiFood = {
-  getFoods: () => {
+  getFoods: ({ cuisineType, mealType }) => {
+    let foods = _foods;
+    if (cuisineType)
+      foods = foods.filter(food => food.cuisineType.title === cuisineType);
+
+    if (mealType)
+      foods = foods.filter(food => food.mealType.title === mealType);
+
     return foods;
   }
 };
