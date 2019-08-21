@@ -96,20 +96,23 @@
 .header {
   background-color: $header-background-color;
   height: $header-height;
+  position: relative;
 
   &__backgrounds {
-    position: relative;
-
     &--left {
       position: absolute;
-      top: -24px;
+      bottom: 0;
       left: 0;
+      height: 100%;
+      z-index: 1;
     }
 
     &--right {
       position: absolute;
-      top: -26px;
+      bottom: 0;
       right: 0;
+      height: 100%;
+      z-index: 1;
     }
   }
 
@@ -121,15 +124,18 @@
     align-items: center;
     align-content: stretch;
     height: $header-height;
+    z-index: 3;
 
     &--text {
       margin-bottom: 40px;
+      z-index: 3;
     }
 
     &--delivery-box {
       text-align: center;
       display: inline-block;
       width: 662px;
+      z-index: 3;
 
       .input-group {
         justify-content: center;
