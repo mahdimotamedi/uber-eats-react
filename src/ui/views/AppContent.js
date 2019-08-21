@@ -3,6 +3,7 @@ import CarouselFood from "../components/carousel-food/CarouselFood";
 import { Container } from "react-bootstrap";
 import ApiFood from "../../core/api/api.food";
 import HomeIntro from "../components/home-intro/HomeIntro";
+import HomeCities from "../components/home-cities/home-cities";
 
 function AppContent() {
   const [foods1, setFoods1] = useState([]);
@@ -25,6 +26,10 @@ function AppContent() {
         <hr />
 
         <CarouselFood title="New on Uber Eats" items={foods2} />
+
+        <hr />
+
+        <HomeCities />
 
         <hr />
       </Container>
