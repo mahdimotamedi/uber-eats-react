@@ -45,13 +45,13 @@ function CarouselFood({ title, items }) {
       <h3>{title}</h3>
 
       <div className="carousel-food__navigator">
-        <Button variant="light" onClick={() => prev()}>
+        <Button variant="light" disabled={isFirstPage} onClick={() => prev()}>
           <img
             src={isFirstPage ? arrowLeftDisabled : arrowLeft}
             alt="arrow-left"
           />
         </Button>
-        <Button variant="light" onClick={() => next()}>
+        <Button variant="light" disabled={isLastPage} onClick={() => next()}>
           <img
             src={isLastPage ? arrowRightDisabled : arrowRight}
             alt="arrow-right"
